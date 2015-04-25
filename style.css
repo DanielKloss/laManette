@@ -1,6 +1,6 @@
 @font-face {
     font-family: Adventure;
-    src: url("/fonts/Adventure.otf");
+    src: url("laManette/fonts/Adventure.otf");
 }
 
 body {
@@ -48,7 +48,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 800px;
-    background-image: url("/images/mainMap.png");
+    background-image: url("laManette/images/mainMap.png");
     background-position: center;
     background-repeat: repeat-y;
 }

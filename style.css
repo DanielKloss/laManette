@@ -4,8 +4,14 @@
 }
 
 body {
+    width: 100%;
     font-size: 20px;
     background-color: saddlebrown;
+}
+
+.container {
+    margin-right: 70px;
+    margin-left: 70px;
 }
 
 h1 {
@@ -26,15 +32,34 @@ h3 {
     text-align: center;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
 form {
     font-size: 1em;
     font-family: Adventure;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    background-image: url("/images/mainMap.png");
+    background-position: center;
+    background-repeat: repeat-y;
 }
 
 .options {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 604px;
+}
+
+span {
 }
 
 .buttons {
@@ -49,4 +74,25 @@ input[type=radio] {
 button {
     font-size: 1em;
     font-family: Adventure;
+}
+
+
+.map-top {
+    width: 800px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -25px;
+    background-image: url("/images/topMap.png");
+    background-position: center;
+}
+
+.map-bottom {
+    width: 800px;
+    height: 252px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+    background-image: url("/images/bottomMap.png");
+    background-position: center;
 }

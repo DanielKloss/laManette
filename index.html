@@ -7,103 +7,25 @@
 <body ng-controller="controller as controller">
     
     <h1>Are You Ready For An Adventure?</h1>
-
+    <div class="map-top"></div>
     <form>
-        <h2>Question 1.</h2>
-        <h3>Where did Dan live between November 2008 and April 2009?</h3>
-        <div class="options">
-            <input type="radio" name="question1" value="La Manette" />La Manette</br>
-            <input type="radio" name="question1" value="Birmingham" />Birmingham</br>
-            <input type="radio" name="question1" value="Ealing" />Ealing</br>
-            <input type="radio" name="question1" value="Turnpike Lane" />Turnpike Lane</br>
-        </div>
-
-        <h2>Question 2.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question2" value="" />{{controller.answer}}</br>
-            <input type="radio" name="question2" value="" /></br>
-            <input type="radio" name="question2" value="" /></br>
-            <input type="radio" name="question2" value="" /></br>
-        </div>
-
-        <h2>Question 3.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question3" value="" /></br>
-            <input type="radio" name="question3" value="" /></br>
-            <input type="radio" name="question3" value="" /></br>
-            <input type="radio" name="question3" value="" /></br>
-        </div>
-
-        <h2>Question 4.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question4" value="" /></br>
-            <input type="radio" name="question4" value="" /></br>
-            <input type="radio" name="question4" value="" /></br>
-            <input type="radio" name="question4" value="" /></br>
-        </div>
-
-        <h2>Question 5.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question5" value="" /></br>
-            <input type="radio" name="question5" value="" /></br>
-            <input type="radio" name="question5" value="" /></br>
-            <input type="radio" name="question5" value="" /></br>
-        </div>
-
-        <h2>Question 6.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question6" value="" /></br>
-            <input type="radio" name="question6" value="" /></br>
-            <input type="radio" name="question6" value="" /></br>
-            <input type="radio" name="question6" value="" /></br>
-        </div>
-
-        <h2>Question 7.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question7" value="" /></br>
-            <input type="radio" name="question7" value="" /></br>
-            <input type="radio" name="question7" value="" /></br>
-            <input type="radio" name="question7" value="" /></br>
-        </div>
-
-        <h2>Question 8.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question8" value="" /></br>
-            <input type="radio" name="question8" value="" /></br>
-            <input type="radio" name="question8" value="" /></br>
-            <input type="radio" name="question8" value="" /></br>
-        </div>
-
-        <h2>Question 9.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question9" value="" /></br>
-            <input type="radio" name="question9" value="" /></br>
-            <input type="radio" name="question9" value="" /></br>
-            <input type="radio" name="question9" value="" /></br>
-        </div>
-
-        <h2>Question 10.</h2>
-        <h3></h3>
-        <div class="options">
-            <input type="radio" name="question10" value="" /></br>
-            <input type="radio" name="question10" value="" /></br>
-            <input type="radio" name="question10" value="" /></br>
-            <input type="radio" name="question10" value="" /></br>
+        <div class="container" ng-repeat="question in controller.questions">
+            <h2>Question {{question.number}}.</h2>
+            <img ng-src="{{question.image}}"/>
+            <h3>{{question.question}}</h3>
+            <div class="options">
+                <input type="radio" name="{{question.number}}" value="{{question.answer1}}" /><span>{{question.answer1}}</span></br>
+                <input type="radio" name="{{question.number}}" value="{{question.answer2}}" /><span>{{question.answer2}}</span></br>
+                <input type="radio" name="{{question.number}}" value="{{question.answer3}}" /><span>{{question.answer3}}</span></br>
+                <input type="radio" name="{{question.number}}" value="{{question.answer4}}" /><span>{{question.answer4}}</span></br>
+            </div>
         </div>
 
         <div class="buttons">
             <button type="submit" value="submit" />Submit
         </div>
-
     </form>
+    <div class="map-bottom"></div>
 
     <script src="angular.js"></script>
     <script src="script.js"></script>

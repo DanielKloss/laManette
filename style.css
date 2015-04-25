@@ -48,7 +48,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 800px;
-    background-image: url("/images/mainMap.png");
+    background-image: url("images/mainMap.png");
     background-position: center;
     background-repeat: repeat-y;
 }
@@ -83,7 +83,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -25px;
-    background-image: url("/images/topMap.png");
+    background-image: url("images/topMap.png");
     background-position: center;
 }
 
@@ -93,6 +93,6 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: -25px;
-    background-image: url("/images/bottomMap.png");
+    background-image: url("images/bottomMap.png");
     background-position: center;
 }

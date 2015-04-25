@@ -18,7 +18,7 @@ angular.module('laManette', [])
         },
         question2: {
             number: 2,
-            image: "laManette/images/2.jpg",
+            image: "/images/2.jpg",
             question: "What is the likelihood that Mark will piss the bed tonight?",
             answer1: "Not at all likely",
             answer2: "Quite Likely",
@@ -28,7 +28,7 @@ angular.module('laManette', [])
         },
         question3: {
             number: 3,
-            image: "laManette/images/3.jpg",
+            image: "/images/3.jpg",
             question: "It's humid in...",
             answer1: "Thailand",
             answer2: "Bangkok",
@@ -38,7 +38,7 @@ angular.module('laManette', [])
         },
         question4: {
             number: 4,
-            image: "laManette/images/4.jpg",
+            image: "/images/4.jpg",
             question: "How full is the glass?",
             answer1: "Half full",
             answer2: "If its not Buca I'm not interested!",
@@ -48,7 +48,7 @@ angular.module('laManette', [])
         },
         question5: {
             number: 5,
-            image: "laManette/images/5.jpg",
+            image: "/images/5.jpg",
             question: "What is the maturity rating of the cheese around Jonny's mouth?",
             answer1: "Fresh and mild like a Baby Mozzarella",
             answer2: "Tangy Greek Feta",
@@ -58,7 +58,7 @@ angular.module('laManette', [])
         },
         question6: {
             number: 6,
-            image: "laManette/images/6.jpg",
+            image: "/images/6.jpg",
             question: "Andy, I WANT you to...",
             answer1: "Join us for a beer",
             answer2: "Come tubing with us",
@@ -68,7 +68,7 @@ angular.module('laManette', [])
         },
         question7: {
             number: 7,
-            image: "laManette/images/7.jpg",
+            image: "/images/7.jpg",
             question: "What is the correct sequence for a Buca Shaker?",
             answer1: "Swig and swallow",
             answer2: "Swig, Spit, shake",
@@ -78,7 +78,7 @@ angular.module('laManette', [])
         },
         question8: {
             number: 8,
-            image: "laManette/images/8.jpg",
+            image: "/images/8.jpg",
             question: "How long ago was it that Luke Jarmey's cousin and Luke Jarmey's mate first had their lives enriched by Dan?",
             answer1: "6 years, 4 months, and 27 days",
             answer2: "5 years, 4 months, and 15 days.",
@@ -88,7 +88,7 @@ angular.module('laManette', [])
         },
         question9: {
             number: 9,
-            image: "laManette/images/9.jpg",
+            image: "/images/9.jpg",
             question: "How many grams of sugar go into a good Onion Soup?",
             answer1: "Just a pinch should do",
             answer2: "A generous handful",
@@ -98,7 +98,7 @@ angular.module('laManette', [])
         },
         question91: {
             number: 10,
-            image: "laManette/images/10.jpg",
+            image: "/images/10.jpg",
             question: "#ScoreGoalsNot",
             answer1: "Drugs",
             answer2: "Girls",

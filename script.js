@@ -8,7 +8,7 @@ angular.module('laManette', [])
     self.questions = {
         question1: {
             number: 1,
-            image: "/laManette/images/1.jpg",
+            image: "/images/1.jpg",
             question: "How ready are you?",
             answer1: "Pumped, bring on the adventure!",
             answer2: "I was about to go for a bike ride but I am curious to see where this is going...",

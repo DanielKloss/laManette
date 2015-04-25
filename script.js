@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('laManette.quiz', ['ngRoute'])
+angular.module('laManette', [])
 
-.controller('ctrl', [function () {
-
+.controller('controller', [function () {
+    var ctrl = this;
+    ctrl.answer = "ANSWER";
 }]);

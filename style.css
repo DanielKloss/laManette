@@ -74,6 +74,12 @@ input[type=radio] {
 button {
     font-size: 1em;
     font-family: Adventure;
+    width: 168px;
+    height: 127px;
+    background: url("images/button.png");
+    background-position: center;
+    box-shadow: none;
+    border: none;
 }
 
 .map-top {

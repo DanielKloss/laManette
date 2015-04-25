@@ -1,8 +1,52 @@
 @font-face {
     font-family: Adventure;
-    src: url("Adventure.otf")
+    src: url("../fonts/Adventure.otf");
+}
+
+body {
+    font-size: 20px;
+    background-color: saddlebrown;
 }
 
 h1 {
+    font-size: 3em;
+    font-family: Adventure;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Adventure;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    font-family: Adventure;
+    text-align: center;
+}
+
+form {
+    font-size: 1em;
+    font-family: Adventure;
+}
+
+.options {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+input[type=radio] {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+button {
+    font-size: 1em;
     font-family: Adventure;
 }

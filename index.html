@@ -14,15 +14,24 @@
             <img ng-src="{{question.image}}"/>
             <h3>{{question.question}}</h3>
             <div class="options">
-                <input type="radio" name="{{question.number}}" value="{{question.answer1}}" /><span>{{question.answer1}}</span></br>
-                <input type="radio" name="{{question.number}}" value="{{question.answer2}}" /><span>{{question.answer2}}</span></br>
-                <input type="radio" name="{{question.number}}" value="{{question.answer3}}" /><span>{{question.answer3}}</span></br>
-                <input type="radio" name="{{question.number}}" value="{{question.answer4}}" /><span>{{question.answer4}}</span></br>
+                <input type="radio" name="{{question.number}}" ng-model="question.answer" value="1" /><span>{{question.answer1}}</span></br>
+                <input type="radio" name="{{question.number}}" ng-model="question.answer" value="2" /><span>{{question.answer2}}</span></br>
+                <input type="radio" name="{{question.number}}" ng-model="question.answer" value="3" /><span>{{question.answer3}}</span></br>
+                <input type="radio" name="{{question.number}}" ng-model="question.answer" value="4" /><span>{{question.answer4}}</span></br>
             </div>
         </div>
 
+        <div ng-show="controller.submitted" class="message">
+            <div ng-show="controller.score <= 2" class="score">{{controller.score}} out of 10 - Oh dear! Are you drunk?</div>
+            <div ng-show="controller.score > 2 && controller.score <= 4" class="score">{{controller.score}} out of 10 - Whoops! Better luck next time!</div>
+            <div ng-show="controller.score > 4 && controller.score <= 5" class="score">{{controller.score}} out of 10 - Solid effort! Bang average!</div>
+            <div ng-show="controller.score > 5 && controller.score <= 9" class="score">{{controller.score}} out of 10 - Nice! You know your Jonny's from your Josh's!</div>
+            <div ng-show="controller.score > 9" class="score">{{controller.score}} out of 10 - Amazing! Some lucky guesses in there!</div>
+            Well done for getting to the end. You're a modern day Inidana Jones! Now for the real treasure... Dan would be honoured if you two would be his best men at his wedding next year. I can't think of a better team!
+        </div>
+
         <div class="buttons">
-            <button type="submit" value="submit" />
+            <button ng-click="controller.submit()" />
         </div>
     </form>
     <div class="map-bottom"></div>

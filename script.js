@@ -5,6 +5,9 @@ angular.module('laManette', [])
 .controller('controller', [function () {
     var self = this;
 
+    self.submitted = false;
+    self.score = 0;
+
     self.questions = {
         question1: {
             number: 1,
@@ -14,7 +17,8 @@ angular.module('laManette', [])
             answer2: "I was about to go for a bike ride but I am curious to see where this is going...",
             answer3: "Excited but I hope its not too much effort",
             answer4: "Not going to lie, I'm a little bit scared...",
-            theAnswer: 1
+            answer: "",
+            theAnswer: "1"
         },
         question2: {
             number: 2,
@@ -24,7 +28,8 @@ angular.module('laManette', [])
             answer2: "Quite Likely",
             answer3: "Very Likely",
             answer4: "Definitely",
-            theAnswer: 4
+            answer: "",
+            theAnswer: "4"
         },
         question3: {
             number: 3,
@@ -34,7 +39,8 @@ angular.module('laManette', [])
             answer2: "Bangkok",
             answer3: "Chang Mai",
             answer4: "Laos",
-            theAnswer: 3
+            answer: "",
+            theAnswer: "3"
         },
         question4: {
             number: 4,
@@ -44,7 +50,8 @@ angular.module('laManette', [])
             answer2: "If its not Buca I'm not interested!",
             answer3: "Half empty",
             answer4: "Who cares? Im drinking the rest of it!",
-            theAnswer: 1
+            answer: "",
+            theAnswer: "3"
         },
         question5: {
             number: 5,
@@ -54,7 +61,8 @@ angular.module('laManette', [])
             answer2: "Tangy Greek Feta",
             answer3: "Full flavoured English Cheddar",
             answer4: "Crusty and stinky like a vintage Stilton",
-            theAnswer: 4
+            answer: "",
+            theAnswer: "4"
         },
         question6: {
             number: 6,
@@ -64,7 +72,8 @@ angular.module('laManette', [])
             answer2: "Come tubing with us",
             answer3: "FUCK OFF!",
             answer4: "Share this bucket with me",
-            theAnswer: 3
+            answer: "",
+            theAnswer: "3"
         },
         question7: {
             number: 7,
@@ -74,7 +83,8 @@ angular.module('laManette', [])
             answer2: "Swig, Spit, shake",
             answer3: "Shake, swig, swallow, spit",
             answer4: "Swig, shake, spit, swig, swallow",
-            theAnswer: 4
+            answer: "",
+            theAnswer: "4"
         },
         question8: {
             number: 8,
@@ -84,7 +94,8 @@ angular.module('laManette', [])
             answer2: "5 years, 4 months, and 15 days.",
             answer3: "6 years, 5 months, and 27 days.",
             answer4: "6 years, 4 months, and 3 days.",
-            theAnswer: 1
+            answer: "",
+            theAnswer: "1"
         },
         question9: {
             number: 9,
@@ -94,7 +105,8 @@ angular.module('laManette', [])
             answer2: "A generous handful",
             answer3: "A whole packet",
             answer4: "As much as you can physically find",
-            theAnswer: 4
+            answer: "",
+            theAnswer: "4"
         },
         question91: {
             number: 10,
@@ -104,17 +116,19 @@ angular.module('laManette', [])
             answer2: "Girls",
             answer3: "Paper",
             answer4: "Holes",
-            theAnswer: 2
+            answer: "",
+            theAnswer: "2"
         }
     };
 
-    self.popup = {
-        zeroToTwo: "Oh dear! Are you drunk?",
-        twoToFour: "Whoops! Better luck next time!",
-        fourToSix: "Solid effort! Bang average!",
-        sixToEight: "Nice! You know your Jonny's from your Josh's!",
-        eightToTen: "Amazing! Some lucky guesses in there!",
-        finalMessage: "Well done for getting to the end. You're a modern day Inidana Jones! Now for the real treasure... Dan would be honoured if you two would be his best men at his wedding next year. I can't think of a better team"
-    }
+    self.submit = function () {
+        self.score = 0;
+        angular.forEach(self.questions, function (value, key) {
+            if (value.answer == value.theAnswer) {
+                self.score += 1;
+            }
+        });
+        self.submitted = true;
+    };
 
 }]);

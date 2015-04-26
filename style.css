@@ -14,6 +14,15 @@ body {
     margin-left: 70px;
 }
 
+.message {
+    padding: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 h1 {
     font-size: 3em;
     font-family: Adventure;
@@ -59,7 +68,12 @@ form {
     width: 604px;
 }
 
-span {
+.score {
+    font-size: 1.5em;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    margin-bottom: 10px;
 }
 
 .buttons {
